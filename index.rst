@@ -1,4 +1,4 @@
-.. title:: Lab Title Here
+.. title:: Nutanix Calm DSL Lab
 
 .. toctree::
   :maxdepth: 2
@@ -9,64 +9,47 @@
   .. example/index
   contents/master_follow
   contents/intro
-  contents/next_file
+  contents/thoughts
 
 .. _getting_started:
 
 Welcome
 #######
 
-Welcome to <Lab Title Here>
+Welcome to the Nutanix Calm DSL Lab!
 
 Getting Started
 ###############
 
-The <Lab Title> will cover a couple of key points.
+The Nutanix Calm DSL Lab will cover a couple of key points.
 
-- Point #1
-- Point #2
-- etc
-
-.. note::
-
-  Introductory note, if required
+- Introduction to the Calm DSL
+- Configuring a Linux system to use the Calm DSL
+- Configuring the Calm DSL connection to a Prism Central instance
+- Learning basic Calm DSL commands
+- Extending basic Calm DSL commands
+- Creating a complete Calm DSL blueprint
+- Configuring Visual Studio Code Intellisense for use with the Calm DSL
 
 .. _requirements:
 
 Requirements
 ############
 
-To successfully complete this app lab, you will need **requirements here**.
+To successfully complete this app lab, you will need the following things.
 
-- Bullet pointed list of requirements
-- Requirement #2
-
-  .. code-block:: bash
-
-     #!/bin/bash
-     # command for this bullet point here
-
-- Requirement #3
-- etc
-
-Optional Components
-###################
-
-In addition to the requirement components above, the following things are "nice to have".  They are not mandatory for these labs.
-
-- Bullet pointed list of optional requirements
-- Requirement #2
-- Requirement #3
-- etc
+- An operating system capable of running a Docker container.  Please note this lab will cover the installation steps for Ubuntu Linux.  Installation steps may vary depending on your choice of operating system.  Ubuntu 20.04 server images can be downloaded from the `Download Ubuntu Server <https://ubuntu.com/download/server>`_ site.
+- An internet connection for installing required software
+- A connection to a Prism Central instance running Calm 2.9.7 or later
 
 Cluster Details
 ###############
 
 This lab can be run in a couple of different ways.  Primarily:
 
-- Is the lab instructor-led?  If so, say so here.
-- Is the lab self-paced?  If so, say so here.
-- Can the lab be both instructor-led **and** self-paced?
+- Instructor-led i.e. in a classroom environment
+- Self-paced i.e. at your own pace and in your own environment
+- A mixture of self-paced and instructor-led
 
 Get Started
 ###########
