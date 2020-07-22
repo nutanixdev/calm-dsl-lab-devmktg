@@ -11,6 +11,9 @@ Preparing Ubuntu Linux for Docker
 
 Once you have your Ubuntu Server 20.04 VM or machine running, it's important to make sure the server has the latest updates.  These typically cover security and bug fixes and are a good idea on any server, regardless of the operating system in use.
 
+Installing Updates + OpenSSH Server
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
 To update your Ubuntu Server, please complete the following steps before continuing.
 
 #. If your server does *not* have an SSH server installed, please install and enable OpenSSH-Server as follows.
@@ -33,6 +36,9 @@ To update your Ubuntu Server, please complete the following steps before continu
 
       ip addr
 
+Installing Docker
+~~~~~~~~~~~~~~~~~
+
 #. We can now install the prerequisites for running the Docker container.  Please note these specific steps are taken directly from the `Install Docker Engine on Ubuntu <https://docs.docker.com/engine/install/ubuntu/>`_ page.
 
    .. code-block:: bash
@@ -50,24 +56,11 @@ To update your Ubuntu Server, please complete the following steps before continu
 
    .. figure:: images/docker_run_hello_world.png
 
-      
+Summary
+.......
 
-`This is a link to Nutanix.dev <https://www.nutanix.dev>`_.
+In this quick intro we completed the following steps:
 
-.. note::
-
-   This is a note.
-
-Subtitle Level 2
-~~~~~~~~~~~~~~~~
-
-Blah blah blah.
-
-Here's some text.
-
-**This text is bold.**
-
-Summary for the Intro
-.....................
-
-Summary here.
+- Ensured our Ubuntu machine is running the latest updates
+- Installed OpenSSH-Server and verified we can login
+- Installed Docker in preparation for running the Calm DSL Docker container
