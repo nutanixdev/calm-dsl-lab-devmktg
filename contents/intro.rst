@@ -11,8 +11,8 @@ Preparing Ubuntu Linux for Docker
 
 Once you have your Ubuntu Server 20.04 VM or machine running, it's important to make sure the server has the latest updates.  These typically cover security and bug fixes and are a good idea on any server, regardless of the operating system in use.
 
-Installing Updates + OpenSSH Server
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Installing Updates + Packages
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 To update your Ubuntu Server, please complete the following steps before continuing.
 
@@ -36,6 +36,12 @@ To update your Ubuntu Server, please complete the following steps before continu
 
       ip addr
 
+#. Verify `git` is installed.  This is required for downloading the Calm DSL in an upcoming step.
+
+   .. code-block:: bash
+
+      sudo apt-get install -y git
+
 Installing Docker
 ~~~~~~~~~~~~~~~~~
 
@@ -56,6 +62,25 @@ Installing Docker
 
    .. figure:: images/docker_run_hello_world.png
 
+Enabling Docker & Setting Permissions
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+The final step, just as a precaution, is to ensure Docker starts when or if the system gets rebooted.
+
+#. Run the following command on your Ubuntu Linux machine.
+
+   .. code-block:: bash
+
+      sudo systemctl start docker && sudo systemctl enable docker
+
+   This will ensure Docker is always available within an SSH or terminal session on your Ubuntu machine.
+
+#. Lastly, set the permissions for our user so we don't need to run Docker with `sudo` every time.
+
+   .. code-block:: bash
+
+      sudo usermod -aG docker $USER
+
 Summary
 .......
 
@@ -64,3 +89,4 @@ In this quick intro we completed the following steps:
 - Ensured our Ubuntu machine is running the latest updates
 - Installed OpenSSH-Server and verified we can login
 - Installed Docker in preparation for running the Calm DSL Docker container
+- Configured our user account so it can run Docker without `sudo` privilege escalation
