@@ -9,6 +9,7 @@
   .. example/index
   contents/master_follow
   contents/intro
+  contents/install
   contents/thoughts
 
 .. _getting_started:
