@@ -10,8 +10,8 @@
   contents/master_follow
   contents/intro
   contents/install
-  contents/thoughts
   contents/configure
+  contents/thoughts
 
 .. _getting_started:
 
