@@ -15,6 +15,7 @@ To configure the Calm DSL, proceed as follows.
    .. code-block:: bash
 
       cd ~/nutanix/calm-dsl
+      . venv/bin/activate
       make run
 
    .. figure:: images/confirm_container_running.png
