@@ -11,6 +11,7 @@
   contents/intro
   contents/install
   contents/configure
+  contents/blueprints
   contents/thoughts
 
 .. _getting_started:

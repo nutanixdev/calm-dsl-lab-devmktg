@@ -35,6 +35,10 @@ To configure the Calm DSL, proceed as follows.
 
    As can be seen above, we have confirmed the `calm` command is available within our container and have then completed the Calm DSL configuration steps.  The Calm DSL is now ready to be used!
 
+   .. note::
+
+      IMPORTANT NOTE: Docker containers are inherently ephemeral by default.  This means files created within the container, **including Calm DSL configuration files**, are lost when the container is stopped.  For this reason, stopping the container will require you to run `calm init dsl` again when you restart the container.
+
 Summary
 .......
 
