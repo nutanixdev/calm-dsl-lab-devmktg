@@ -11,7 +11,12 @@ As a quick summary, here's what we covered:
 - Learning basic Calm DSL commands
 - Extending basic Calm DSL commands
 - Creating a complete Calm DSL blueprint
-- Configuring Visual Studio Code Intellisense for use with the Calm DSL
+
+There are a number of features available in the DSL that we didn't cover today.  For a complete list of the commands available within the DSL, the following command can be used.
+
+.. code-block:: bash
+
+   calm --help
 
 For further information on Nutanix Developer Resources, please see the `Nutanix Developer Portal <https://www.nutanix.dev>`_.
 
