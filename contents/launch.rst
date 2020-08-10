@@ -48,13 +48,11 @@ Direct Launch
      .. code-block:: python
 
         variable_list = [
-            {"value": {"value": 17}, "context": "HelloProfile", "name": "var3"},
+            {"value": {"value": 17}, "context": "HelloProfile", "name": "var1"},
             {"value": {"value": "goodbye"}, "context": "HelloProfile", "name": "var2"},
         ]
 
      .. note::
-
-        The indentation of the **runtime_variables.py** file is important.  Please ensure the file appears exactly as shown above.
 
     - Save the **runtime_variables.py** and exit using the following key sequence:
 
