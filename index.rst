@@ -13,6 +13,7 @@
   contents/configure
   contents/blueprints
   contents/launch
+  contents/decompile
   contents/thoughts
 
 .. _getting_started:
