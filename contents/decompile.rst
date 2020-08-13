@@ -70,7 +70,7 @@ The first step in the decompilation process is to take the existing Prism Centra
 
    .. figure:: images/decompile_bp_from_pc_files.png
 
-   The file list looks quite different from the file list generated using `calm init bp`, even though the blueprints are essentially the same.  Why?  The simple explanation is that only the required files are created when generating the sample blueprint, whereas the Calm DSL will dump all scripts required to programmatically edit a blueprint, even if they aren't explicitly used to run the application.
+   The file list looks quite different from the file list generated using `calm init bp`, even though the blueprints are essentially the same.  Why?  The simple explanation is that only certain required files are created when generating the sample/demo blueprint, whereas Calm DSL decompile will dump all scripts required to programmatically edit a blueprint by following the steps located in the `Calm DSL documentation <https://github.com/nutanix/calm-dsl/blob/master/README.md#decompile>`_.
 
 Method 2 - JSON File
 ....................
@@ -132,4 +132,4 @@ This section of the lab covered the high-level specifics of blueprint decompilat
 - Decompiling a blueprint that already exists in a Prism Central instance
 - Decompiling a blueprint that exists as a local JSON file
 
-In the next section we'll wrap things up and summarise the takeaways from this lab.
+In the next section we'll take everything we've learnt so far and create a custom Calm DSL blueprint from scratch.
