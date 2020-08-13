@@ -20,7 +20,7 @@ There are a number of features available in the DSL that we didn't cover today. 
 
 For further information on Nutanix Developer Resources, please see the `Nutanix Developer Portal <https://www.nutanix.dev>`_.
 
-- `Code samples <https://www.nutanix.dev/code-samples>`_
+- `Code samples <https://www.nutanix.dev/code_samples>`_
 - `Documentation <https://www.nutanix.dev/api-reference>`_
 - `Labs <https://www.nutanix.dev/labs>`_
 

@@ -36,6 +36,10 @@ To update your Ubuntu Server, please complete the following steps before continu
 
       ip addr
 
+   An example of running `ip addr` is shown below.  Please be aware it is possible your configuration will be different for both interface name (enp0s3) and IP address (10.0.2.15).
+
+   .. figure:: images/ip_addr_example.png
+
 #. Verify `git` is installed.  This is required for downloading the Calm DSL in an upcoming step.
 
    .. code-block:: bash
@@ -50,12 +54,12 @@ Installing Docker
    .. code-block:: bash
 
       sudo apt-get remove docker docker-engine docker.io containerd runc
-      sudo apt-get update && sudo apt-get install apt-transport-https ca-certificates curl gnupg-agent software-properties-common
+      sudo apt-get update && sudo apt-get install -y apt-transport-https ca-certificates curl gnupg-agent software-properties-common
       curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
       sudo apt-key fingerprint 0EBFCD88
       sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable"
       sudo apt-get update
-      sudo apt-get install docker-ce docker-ce-cli containerd.io
+      sudo apt-get install -y docker-ce docker-ce-cli containerd.io
       sudo docker run hello-world
 
    At the completion of these steps, you will receive a message informing you that Docker has been installed and can be used to run the `hello-world` demo container.

@@ -14,6 +14,7 @@
   contents/blueprints
   contents/launch
   contents/decompile
+  contents/create
   contents/thoughts
 
 .. _getting_started:
@@ -45,7 +46,7 @@ To successfully complete this app lab, you will need the following things.
 
 - An operating system capable of running a Docker container.  Please note this lab will cover the installation steps for Ubuntu Linux.  Installation steps may vary depending on your choice of operating system.  Ubuntu 20.04 server images can be downloaded from the `Download Ubuntu Server <https://ubuntu.com/download/server>`_ site.
 - An internet connection for installing required software
-- A connection to a Prism Central instance running Calm 2.9.7 or later
+- A connection to a Prism Central instance running Nutanix Calm 2.9.7 or later
 
 Cluster Details
 ###############
