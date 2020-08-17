@@ -187,7 +187,7 @@ Package Install Scripts
 
 The next steps are to create the scripts that run at various stages during the application lifecycle.  This particular application is made up of a single VM that runs two scripts.  The first script updates CentOS with the latest packages, and the second script installs and configures a basic firewall.  Let's create those now.
 
-#. Edit the **scripts/package_install_configure_base_vm** script so that it contains the following.
+#. Edit the **scripts/package_install_configure_base_vm.sh** script so that it contains the following.
 
    .. code-block:: bash
 
@@ -202,7 +202,7 @@ The next steps are to create the scripts that run at various stages during the a
 
    This script, as mentioned earlier, updated the CentOS Linux system packages, then installs the `vim` and `git` packages.  We won't explicitly use those in today's lab, but it shows how easily a package install script can do anything we choose when it runs.
 
-#. Edit the **scripts/package_install_configure_firewall** script so that it contains the following.
+#. Edit the **scripts/package_install_configure_firewall.sh** script so that it contains the following.
 
    .. code-block:: bash
 
