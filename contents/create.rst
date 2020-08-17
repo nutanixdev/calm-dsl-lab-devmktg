@@ -346,7 +346,7 @@ Before creating the **blueprint.py** file, some environment-specific information
                     name="ConfigureFirewall",
                     filename=os.path.join(
                         "scripts",
-                        "Package_BasicLinuxPackage_Action___install___Task_ConfigureFirewall.sh",
+                        "package_install_configure_firewall.sh",
                     ),
                     cred=ref(BP_CRED_SuperUser),
                     target=ref(BasicLinux),
