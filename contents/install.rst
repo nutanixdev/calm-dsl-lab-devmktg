@@ -31,8 +31,31 @@ Along the way, we will keep our source code and files clean by creating a direct
 
    .. figure:: images/clone_dsl_files.png
 
-Preparing to build the Container
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Building or running Calm DSL Container
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+The Nutanix Calm DSL is aimed at automation engineers, scripting teams or developers that need to control Nutanix Calm via the command line.  However, there are two ways of using the Nutanix Calm DSL container.
+
+1. The same way as any other publicly-available container via `docker run`.  This is the easiest method and is recommended if you are not going to be actively working on the Calm DSL codebase.
+2. Compiling the container locally so that any changes you make are built into your own local version of the container.  This is recommended for advanced users.
+
+This lab will cover both methods, but it is strongly recommended to use method #1 unless local container development is a requirement.
+
+**Method 1 - `docker run`**
+
+#. On your laptop/PC with Docker installed, run the following command.
+
+   .. code-block:: bash
+
+      docker run -it ntnx/calm-dsl
+
+   That's it!  In all honesty this doesn't even need to be a method on its own, but demonstrates how easy it is to use the Calm DSL container that has been published by the Calm engineering team.
+
+**Method 2 - Building the container**
+
+.. note::
+
+   This method is recommended for advanced users only.
 
 In order to build the Calm DSL container, a few Linux package prerequisites must be satisfied.  We can easily install those via `apt`, as follows.
 
@@ -48,10 +71,7 @@ In order to build the Calm DSL container, a few Linux package prerequisites must
 
    .. figure:: images/pip3_install_wheel.png
 
-Building the Calm DSL Container
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-With our system now configured to build the Calm DSL container, we can do exactly that.  For this process to function as expected, we'll also make sure these steps are completed within a Python virtual environment.
+   With our system now configured to build the Calm DSL container, we can do exactly that.  For this process to function as expected, we'll also make sure these steps are completed within a Python virtual environment.
 
 #. Build the container as follows.
 
@@ -63,12 +83,7 @@ With our system now configured to build the Calm DSL container, we can do exactl
       pip3 install wheel
       make docker
 
-Run the Container
-~~~~~~~~~~~~~~~~~
-
-The great thing about proceeding this way is that we now have a nicely 'packaged' environment for using the Calm DSL.  Our prerequisites are installed, the container is built and ready for use - the only thing left to do now is run the container itself.
-
-#. Run the container as follows.
+#.  Run the container as follows.
 
    .. code-block:: bash
 

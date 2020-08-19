@@ -85,6 +85,10 @@ The final step, just as a precaution, is to ensure Docker starts when or if the 
 
       sudo usermod -aG docker $USER
 
+   .. note::
+
+      You will need to log out and back in for the group membership change to take effect.
+
 Summary
 .......
 
