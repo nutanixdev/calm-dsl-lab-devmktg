@@ -41,7 +41,7 @@ The Nutanix Calm DSL is aimed at automation engineers, scripting teams or develo
 
 This lab will cover both methods, but it is strongly recommended to use method #1 unless local container development is a requirement.
 
-**Method 1 - `docker run`**
+**Method 1 - `docker run`** [Recommended for most users]
 
 #. On your laptop/PC with Docker installed, run the following command.
 
@@ -51,11 +51,7 @@ This lab will cover both methods, but it is strongly recommended to use method #
 
    That's it!  In all honesty this doesn't even need to be a method on its own, but demonstrates how easy it is to use the Calm DSL container that has been published by the Calm engineering team.
 
-**Method 2 - Building the container**
-
-.. note::
-
-   This method is recommended for advanced users only.
+**Method 2 - Building the container** [Recommended for advanced users only]
 
 In order to build the Calm DSL container, a few Linux package prerequisites must be satisfied.  We can easily install those via `apt`, as follows.
 
