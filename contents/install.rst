@@ -81,13 +81,13 @@ In order to build the Calm DSL container, a few Linux package prerequisites must
 
 #.  Run the container as follows.
 
-   .. code-block:: bash
+    .. code-block:: bash
 
-      make run
+       make run
 
-   .. figure:: images/make_run.png
+    .. figure:: images/make_run.png
 
-   The Nutanix Calm DSL Docker is now running.
+    The Nutanix Calm DSL Docker is now running.
 
 Summary
 .......
