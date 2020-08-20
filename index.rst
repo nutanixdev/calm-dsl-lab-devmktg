@@ -44,7 +44,8 @@ Requirements
 
 To successfully complete this app lab, you will need the following things.
 
-- An operating system capable of running a Docker container.  Please note this lab will cover the installation steps for Ubuntu Linux.  Installation steps may vary depending on your choice of operating system.  Ubuntu 20.04 server images can be downloaded from the `Download Ubuntu Server <https://ubuntu.com/download/server>`_ site.
+- A laptop or PC capable of running an Ubuntu Linux 20.04 VM (see next point)
+- An Ubuntu Linux 20.04 VM (Server or Desktop).  Because of the advanced nature of this lab, the deployment of an Ubuntu VM is not covered in this content.  It is suggested that free virtualisation software such as [VirtualBox](https://www.virtualbox.org/) is used.
 - An internet connection for installing required software
 - A connection to a Prism Central instance running Nutanix Calm 2.9.7 or later
 
