@@ -77,9 +77,13 @@ The first thing we'll do is use the Nutanix Calm DSL to create a blueprint for u
 
    .. code-block:: bash
 
-      vi /root/HelloBlueprint/blueprint.py
+      more /root/HelloBlueprint/blueprint.py
 
-   As an introduction, one of the great things about the generated blueprint.py file is that it documents a lot of itself within itself.  Using arrow keys and Page Up + Page Down to navigate within `vi`, please note the following key points.
+   .. note::
+
+      The **more** command will show a page of content at a time.  Press **SPACE** to go to the next page or **q** to quit at any time.
+
+   As an introduction, one of the great things about the generated blueprint.py file is that it documents a lot of itself within itself.  The key points are as follows.
 
    - The required Python modules and libraries are imported right the start.
    - An SSH credential with username “centos” and the public key contained in “keys/centos_pub” is created. This is a good example of one of the files we can modify to suit our needs i.e. the credential’s public key file.
@@ -95,22 +99,17 @@ The first thing we'll do is use the Nutanix Calm DSL to create a blueprint for u
 
    Let's now take the sample blueprint, upload it to Prism Central and compare what we see in the Calm UI with the list of key points above.
 
-#. We can now exit the `vi` editor as follows:
-
-   - Press ESC
-   - Type a colon (`:`), type the letter `q` (for Quit), an exclamation point (`!`) to ensure any changes aren't saved, then press ENTER
-
-#. Within your Calm DSL container, use the following command to upload the blueprint to Prism Central.
+#. Within your Calm DSL container, use the following command to upload the blueprint to Prism Central.  Replace **<initials>** with your initials.
 
    .. code-block:: bash
    
-      calm create bp --file /root/HelloBlueprint/blueprint.py --name HelloBlueprint
+      calm create bp --file /root/HelloBlueprint/blueprint.py --name HelloBlueprint_<initials>
 
    .. figure:: images/upload_blueprint.png
 
-   As you can see, the Calm DSL has gone through a process of verifying the `blueprint.py` and associated files are valid (an error would be returned if they weren't), and has created a blueprint named **HelloBlueprint** on our Prism Central instance.
+   As you can see, the Calm DSL has gone through a process of verifying the `blueprint.py` and associated files are valid (an error would be returned if they weren't), and has created a blueprint named **HelloBlueprint_<initials>** on our Prism Central instance.
 
-#. Login to Prism Central using your credentials.  Please note Prism Central will be referred to as **PC** from now on.
+#. Login to Prism Central using your credentials.
 
 #. Select :fa:`bars` **> Services > Calm**.
 
@@ -120,7 +119,7 @@ The first thing we'll do is use the Nutanix Calm DSL to create a blueprint for u
 
       Mousing over an icon will display its title.
 
-#. Select **HelloBlueprint** - this is the blueprint uploaded by the Calm DSL in previous steps.
+#. Select **HelloBlueprint_<initials>** - this is the blueprint uploaded by the Calm DSL in previous steps.
 
    Note that all settings specified in our `blueprint.py` and associated scripts files are present in the UI.
 
@@ -141,7 +140,7 @@ The first thing we'll do is use the Nutanix Calm DSL to create a blueprint for u
 Working with Blueprints
 ~~~~~~~~~~~~~~~~~~~~~~~
 
-Now that we have used the Calm DSL to create a sample blueprint, uploaded that blueprint to Prism Central and are aware of uploaded results, let's take a look at some of the other blueprint manage functions available in the Calm DSL.
+Now that we have used the Calm DSL to create a sample blueprint, uploaded that blueprint to Prism Central and are aware of uploaded results, let's take a look at some of the other blueprint management functions available in the Calm DSL.
 
 This section will be relatively short so that we can move on to the next section.
 
@@ -153,11 +152,13 @@ This section will be relatively short so that we can move on to the next section
 
   .. figure:: images/calm_get_bps.png
 
-- Search for a specific blueprint by name:
+  Note our **HelloBlueprint_<initials>** blueprint and **lab_project_<initials>** project.
+
+- Search for a specific blueprint by name.  Replace **<initials>** with your initials.
 
   .. code-block:: bash
 
-     calm get bps --name HelloBlueprint
+     calm get bps --name HelloBlueprint_<initials>
 
   .. figure:: images/calm_get_bps_name.png
 

@@ -55,13 +55,13 @@ This lab will cover both methods, but it is strongly recommended to use method #
 
 In order to build the Calm DSL container, a few Linux package prerequisites must be satisfied.  We can easily install those via `apt`, as follows.
 
-#. Install the package prerequisite packages.
+#. Install the prerequisite packages.
 
    .. code-block:: bash
 
       sudo apt-get install -y git python3 python3-venv openssl build-essential make libssl-dev python3-pip
 
-   This process can take a few minutes depending on the speed of your internet connection.  Please wait for this process to finish and ensure no errors occurred during the package install process.  The last few lines of this process are shown below.
+   This process can take a few minutes depending on the speed of your internet connection and on the resources available to your Linux machine.  Please wait for this process to finish and ensure no errors occurred during the package install process.  The last few lines of this process running successfully are shown below.
 
    .. figure:: images/calm_dsl_prerequisites.png
 
@@ -95,7 +95,7 @@ Summary
 In this setup section we completed the following steps:
 
 - Downloaded the Nutanix Calm DSL files by cloning the Calm DSL public GitHub repository
-- Install Linux package prerequisites for building the Calm DSL Docker container
-- Built and ran the Calm DSL Docker container
+- [Option 1] Ran the `ntnx/calm-dsl` container directly using `docker run`
+- [Option 2] Installed Linux package prerequisites, then built and ran the container
 
 In the next section we'll configure this specific Docker container instance to connect to Prism Central and talk to Calm.
