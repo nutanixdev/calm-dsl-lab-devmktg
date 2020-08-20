@@ -415,7 +415,7 @@ With the files created and the blueprint ready to be created on Prism Central, a
 
    .. figure:: images/basiclinuxvm_create.png
 
-   As you can see from the screenshot above, a new blueprint named **BasicLinuxVM-cr** has been created on the connected Prism Central instance.
+   As you can see from the screenshot above, a new blueprint named **BasicLinuxVM_<initials>>** has been created on the connected Prism Central instance.
 
 #. We can now continue to the final step - launching the new blueprint!  Run the following command to do that.  Replace **<initials>** with your initials.
 
@@ -425,7 +425,7 @@ With the files created and the blueprint ready to be created on Prism Central, a
 
    .. figure:: images/basiclinuxvm_launch.png
 
-   As you can see from the screenshot above, our `BasicLinuxVM` blueprint has been launched and an application created named `BasicLinuxVM-cr`. 
+   As you can see from the screenshot above, our `BasicLinuxVM_<initials>` blueprint has been launched and an application created named `BasicLinuxVM_<initials>`. 
 
 
 Summary
