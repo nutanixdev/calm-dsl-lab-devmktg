@@ -45,7 +45,7 @@ The first thing we'll do is use the Nutanix Calm DSL to create a blueprint for u
    .. note::
 
       HINT: To get started, follow the 3 steps below:
-      1. Initialize an example blueprint DSL: calm init bp
+      1. Update the Calm DSL cache then initialize an example blueprint using the DSL: calm init bp
       2. Create and validate the blueprint: calm create bp --file HelloBlueprint/blueprint.py
       3. Start an application using the blueprint: calm launch bp Hello --app_name HelloApp01 -i
 
@@ -53,6 +53,7 @@ The first thing we'll do is use the Nutanix Calm DSL to create a blueprint for u
 
    .. code-block:: bash
 
+      calm update cache
       calm init bp
 
    .. figure:: images/calm_init_bp.png
