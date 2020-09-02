@@ -89,16 +89,17 @@ For today's lab, we will use a project specifically intended for our use and our
 
    .. code-block:: bash
 
-      calm create project --file lab_project_<initials>.py --name "lab_project_<initials>" --description "Project for with the Calm DSL Lab"
+      calm create project --file lab_project_<initials>.py --name "lab_project_<initials>" --description "Project for use with the Calm DSL Lab"
 
    As you can see from the screenshot below, the Calm DSL will create our new project as expected.
 
    .. figure:: images/create_lab_project.png
 
-#. As a final step, we need to now tell the Calm DSL to use that project.  Run the following command to complete this step.  Replace **<initials>** with your initials.
+#. As a final step, we need to now tell the Calm DSL to use that project.  Run the following commands to complete this step.  Replace **<initials>** with your initials.
 
    .. code-block:: bash
 
+      calm update cache
       calm set config --project lab_project_<initials>
 
    There's no output from this command, as shown below.

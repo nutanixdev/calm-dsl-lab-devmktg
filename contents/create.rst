@@ -421,7 +421,7 @@ With the files created and the blueprint ready to be created on Prism Central, a
 
    .. code-block:: bash
 
-      calm launch bp BasicLinuxVM-<initials> --app_name BasicLinux-<initials> --ignore_runtime_variables
+      calm launch bp BasicLinuxVM_<initials> --app_name BasicLinux_<initials> --ignore_runtime_variables
 
    .. figure:: images/basiclinuxvm_launch.png
 

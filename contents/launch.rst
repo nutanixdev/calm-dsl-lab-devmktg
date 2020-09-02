@@ -79,7 +79,7 @@ One of the most powerful features of Nutanix Calm is the ability to take a compl
 
 The Calm DSL has built-in features to work with the Nutanix Calm Marketplace, one of which is the ability to take our HelloBlueprint app and make it available for launch directly from the Marketplace.  Let's do that now.
 
-#. First, use the following command to take a look at existing Marketplace items.  These items are already approved and available for launch from Nutanix calm.
+#. First, use the following command to take a look at existing Marketplace items.  These items are already approved and available for launch from Nutanix Calm.
 
    .. code-block:: bash
 
@@ -115,7 +115,7 @@ The Calm DSL has built-in features to work with the Nutanix Calm Marketplace, on
 
    .. code-block:: bash
 
-      calm publish bp HelloBlueprint_<initials> --version v1.0.0 --name HelloApp_<initials> --description "HelloApp from the Calm DSL" --with_secrets --publish_to_marketplace --project lab_project_<initials> --category DevOps
+      calm publish bp HelloBlueprint_<initials> --version 1.0.0 --name HelloApp_<initials> --description "HelloApp from the Calm DSL" --with_secrets --publish_to_marketplace --project lab_project_<initials> --category Demo
 
    .. figure:: images/calm_publish_bp.png
 
@@ -131,7 +131,7 @@ The Calm DSL has built-in features to work with the Nutanix Calm Marketplace, on
 
    .. code-block:: bash
 
-      calm publish bp HelloBlueprint_<initials> --version v1.0.0 --name HelloApp_<initials> --description "HelloApp from the Calm DSL" --with_secrets --project lab_project_<initials> --category DevOps
+      calm publish bp HelloBlueprint_<initials> --version 1.0.0 --name HelloApp_<initials> --description "HelloApp from the Calm DSL" --with_secrets --project lab_project_<initials> --category Demo
 
 #. **Please note this important step.**  As the time this lab was being developed, the Calm DSL didn't yet support programmatic control of the Project Environments.  Project Environments define default credentials, VM specs (etc) that will be used if they aren't already specified by a blueprint.
 
