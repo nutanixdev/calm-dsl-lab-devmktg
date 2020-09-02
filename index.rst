@@ -44,7 +44,7 @@ Requirements
 
 To successfully complete this app lab, you will need the following things.
 
-- A laptop or PC capable of running an Ubuntu Linux 20.04 VM (see next point).  **Please note - you are welcome to use an alternative Linux distribution (e.g. CentOS), although the instructions for things like like package installation will make use of apt-get vs yum.  These instructions will only be usable in Debian/Ubuntu-based distributions.**
+- A laptop or PC capable of running an Ubuntu Linux 20.04 VM (see next point).  **Please note - you are welcome to use an alternative Linux distribution (e.g. CentOS), although the instructions for certain steps will need to be adjusted.  For example, CentOS makes use of "yum" for package installation, vs. "apt-get" on Ubuntu/Debian-based distributions.**
 - An Ubuntu Linux 20.04 VM (Server or Desktop).  Because of the advanced nature of this lab, the deployment of an Ubuntu VM is not covered in this content.  A complete guide for deploying Ubuntu Linux 20.04 on VirtualBox is available at `WikiHow<https://www.wikihow.com/Install-Ubuntu-on-VirtualBox>`_.
 - An internet connection for installing required software
 - A connection to a Prism Central instance running Nutanix Calm 2.9.7 or later
