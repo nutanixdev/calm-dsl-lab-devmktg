@@ -31,6 +31,8 @@ The first thing we'll do is use the Nutanix Calm DSL to create a blueprint for u
 
 #. If your Docker container is not already running within a virtual environment, please complete the first steps below.  If your Docker container is still running and configured from previous steps, please skip to step 2.
 
+   **When prompted for the project name, ensure you use the name of your own project as created in the previous step.**
+
    .. code-block:: bash
 
       cd ~/nutanix/calm-dsl
