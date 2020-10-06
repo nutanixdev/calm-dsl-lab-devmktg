@@ -89,6 +89,11 @@ The final step, just as a precaution, is to ensure Docker starts when or if the 
 
       You will need to log out and back in for the group membership change to take effect.
 
+   .. code-block:: bash
+
+      exit
+      ssh <username>@<ip_address>
+
 Summary
 .......
 
