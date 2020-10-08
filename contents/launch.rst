@@ -83,7 +83,7 @@ The Calm DSL has built-in features to work with the Nutanix Calm Marketplace, on
 
    .. code-block:: bash
 
-      calm get marketplace_items
+      calm get marketplace items
 
    .. figure:: images/calm_get_marketplace_items.png
 
@@ -91,7 +91,7 @@ The Calm DSL has built-in features to work with the Nutanix Calm Marketplace, on
 
    .. code-block:: bash
 
-      calm get marketplace_items --name Hadoop
+      calm get marketplace items --name Hadoop
 
    .. figure:: images/calm_get_marketplace_items_name.png
 
