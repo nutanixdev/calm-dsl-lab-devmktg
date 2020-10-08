@@ -65,6 +65,12 @@ SSH Key Pair
 
 To save time, this lab will use an SSH key pair that was generated previously.
 
+#. Ensure your current working directory is the BasicLinuxVM directory.
+
+   .. code-block:: bash
+
+      cd ~/nutanix/BasicLinuxVM
+
 #. Edit **.local/superuser_private_key** so that it contains the following:
 
    .. code-block:: bash
