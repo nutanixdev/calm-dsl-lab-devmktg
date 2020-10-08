@@ -116,7 +116,7 @@ The first thing we'll do is use the Nutanix Calm DSL to create a blueprint for u
 
 #. Select :fa:`bars` **> Services > Calm**.
 
-#. Select **Blueprints** in the left hand toolbar to view and manage Calm bleuprints.
+#. Select **Blueprints** in the left hand toolbar to view and manage Calm blueprints.
 
    .. note::
 
