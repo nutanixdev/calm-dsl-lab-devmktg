@@ -150,7 +150,7 @@ The Calm DSL has built-in features to work with the Nutanix Calm Marketplace, on
 
      .. figure:: images/environment_create_cred.png
 
-   - Configure the VM specs as shown; as with the credential these values won't actually be used, so you may set them to any values you choose
+   - Configure the VM specs as shown, selecting any image that is available in the list; as with the credential these values won't actually be used, so you may set them to any values you choose
 
      .. figure:: images/environment_configure_specs.png
 
