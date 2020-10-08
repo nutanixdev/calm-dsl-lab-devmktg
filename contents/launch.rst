@@ -164,7 +164,7 @@ The Calm DSL has built-in features to work with the Nutanix Calm Marketplace, on
 
    .. code-block:: bash
 
-      calm launch marketplace_item HelloApp_<initials> --version 1.0.0 --app_name HelloApp_<initials>_1_0_0 --project lab_project_<initials> --ignore_runtime_variables
+      calm launch marketplace item HelloApp_<initials> --version 1.0.0 --app_name HelloApp_<initials>_1_0_0 --project lab_project_<initials> --ignore_runtime_variables
 
    As shown in the screenshot below, the Calm DSL has utilised the Calm APIs to launch **HelloApp_<initials>** from the Calm Marketplace.
 
