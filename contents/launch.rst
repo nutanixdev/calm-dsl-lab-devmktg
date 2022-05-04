@@ -54,11 +54,11 @@ Direct Launch
 
      .. note::
 
-    - Save the **runtime_variables.py** and exit using the following key sequence:
+        - Save the **runtime_variables.py** and exit using the following key sequence:
 
-      - ESC
-      - :wq
-      - ENTER
+        - ESC
+        - :wq
+        - ENTER
 
 #. As mentioned in previous steps, **HelloBlueprint_<initials>** was created with some default credentials in the form of an SSH key pair.  We don't need to generate our own and can now launch the blueprint, along with specifying the runtime variables file created in the previous step.  Enter the following command to launch the **HelloApp_<initials>** app.  Replace **<initials>** with your initials.
 

@@ -61,4 +61,4 @@ This lab can be run in a couple of different ways.  Primarily:
 Get Started
 ###########
 
-With all that out of the way, let's now start by looking at some of the `conventions that will be used <contents/master_follow/>`_.
+With all that out of the way, let's now start by looking at some of the `conventions that will be used <contents/master_follow.html>`_.

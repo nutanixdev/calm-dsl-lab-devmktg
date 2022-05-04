@@ -171,7 +171,7 @@ Spec Editables
 
 #. Edit the **specs/basiclinuxvm_cloudinit_data.yaml** file so that it contains the following.  Ensure indentation is exactly as shown below.
 
-   .. code-block:: yaml
+   .. code-block::
 
       #cloud-config
       users:
